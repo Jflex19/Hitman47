@@ -85,7 +85,7 @@ export default class command extends BaseCommand {
             const { subject } = await this.client.groupMetadata(supportGroups[i])
             const code = await this.client.groupInviteCode(supportGroups[i])
             text += `*#${i + 1}*\n*${subject}:* *https://chat.whatsapp.com/${code}*\n`
-            if (!url) url = `https://chat.whatsapp.com/${code}`
+            if (!url) url = `https://chat.whatsapp.com/HbQRhkPZfcnFQ0wA8bKVaT}`
         }
         await this.client.sendMessage(M.sender.jid, {
             text
